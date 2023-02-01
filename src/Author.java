@@ -1,15 +1,15 @@
 public class Author {
      private String nameAuthor;
-     private String surnameAuthor;
-    public Author(String nameAuthor, String surnameAuthor) {
+     private String surNameAuthor;
+    public Author(String nameAuthor , String surNameAuthor) {
         this.nameAuthor = nameAuthor;
-        this.surnameAuthor = surnameAuthor;
+        this.surNameAuthor = surNameAuthor;
     }
-
     public String getNameAuthor() {
         return this.nameAuthor;
     }
-    public String getSurnameAuthor() {
-        return this.surnameAuthor;
+    public String getSurNameAuthor() { return this.surNameAuthor; }
+    public String toString(){
+        return " Автор " + getNameAuthor() + " " +getSurNameAuthor();
     }
 }
